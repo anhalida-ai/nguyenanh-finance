@@ -1,121 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Nguyen Anh Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 
 body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#fdfdfd;
-    color:#323b4c;
+margin:0;
+font-family:Arial;
+background:#fdfdfd;
+color:#323b4c;
 }
 
 /* HEADER */
 
 header{
-    background:#f2a88d;
-    padding:60px 20px;
-    text-align:center;
+background:#f2a88d;
+padding:60px 20px;
+text-align:center;
 }
 
 header img{
-    width:140px;
-    height:140px;
-    border-radius:50%;
-    object-fit:cover;
-    border:5px solid #fdfdfd;
+width:150px;
+height:150px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid white;
 }
 
 header h1{
-    margin:15px 0 5px;
-    font-size:36px;
-    letter-spacing:1px;
+margin:15px 0 5px;
+font-size:38px;
 }
 
 header p{
-    margin:4px 0;
+margin:4px;
+}
+
+.student{
+font-weight:bold;
 }
 
 /* SECTION */
 
 section{
-    max-width:900px;
-    margin:auto;
-    padding:50px 20px;
+max-width:1000px;
+margin:auto;
+padding:50px 20px;
+}
+
+h2{
+border-left:6px solid #f2a88d;
+padding-left:10px;
 }
 
 /* ABOUT */
 
 .about{
-    background:#ffeae3;
-    border-radius:10px;
+background:#ffeae3;
+border-radius:10px;
+}
+
+/* CONTACT */
+
+.contact i{
+margin-right:10px;
 }
 
 /* SKILLS */
 
 .skills ul{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    padding:0;
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+padding:0;
 }
 
 .skills li{
-    list-style:none;
-    background:#f2a88d;
-    padding:8px 14px;
-    border-radius:20px;
-    color:white;
-    font-size:14px;
+list-style:none;
+background:#f2a88d;
+padding:10px 16px;
+border-radius:25px;
+color:white;
+font-size:14px;
 }
 
-/* PROJECT */
+.skills i{
+margin-right:6px;
+}
+
+/* EXPERIENCE */
+
+.job{
+background:#ffeae3;
+padding:20px;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+/* PROJECTS */
 
 .projects{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
-.project-card{
-    background:#ffeae3;
-    padding:20px;
-    border-radius:10px;
-    transition:0.3s;
+.project{
+background:#ffeae3;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
 }
 
-.project-card:hover{
-    transform:translateY(-5px);
+.project:hover{
+transform:translateY(-5px);
 }
 
-/* CONTACT */
-
-.contact{
-    text-align:center;
-}
+/* BUTTON */
 
 button{
-    background:#323b4c;
-    color:white;
-    padding:12px 22px;
-    border:none;
-    border-radius:6px;
-    cursor:pointer;
+background:#323b4c;
+color:white;
+padding:12px 22px;
+border:none;
+border-radius:6px;
+cursor:pointer;
 }
 
 button:hover{
-    opacity:0.9;
+opacity:0.9;
 }
 
+/* FOOTER */
+
 footer{
-    text-align:center;
-    padding:30px;
-    font-size:14px;
-    background:#ffeae3;
+text-align:center;
+padding:30px;
+background:#ffeae3;
 }
 
 </style>
@@ -134,7 +163,7 @@ footer{
 
 <p>Financial Analysis & Investment Student</p>
 
-<p><strong>Student ID:</strong> 2414330004</p>
+<p class="student">Student ID: 2414330004</p>
 
 <p>Foreign Trade University - Hanoi</p>
 
@@ -143,14 +172,33 @@ footer{
 
 <section class="about">
 
-<h2>About Me</h2>
+<h2>Profile</h2>
 
 <p>
+
 Second-year Financial Analysis & Investment student at Foreign Trade University.
-Interested in financial markets, corporate finance and investment analysis.
-Currently building experience in marketing and business environments while
-developing strong analytical and communication skills.
+Currently pursuing CFA Level 1 with strong interest in financial markets,
+corporate finance and investment research.
+
+Seeking opportunities to enhance analytical skills, gain practical experience,
+and develop a professional career in finance and investment.
+
 </p>
+
+</section>
+
+
+<section>
+
+<h2>Contact</h2>
+
+<p><i class="fa-solid fa-phone"></i> 0907996561</p>
+
+<p><i class="fa-solid fa-envelope"></i> anhalida@gmail.com</p>
+
+<p><i class="fa-solid fa-location-dot"></i> Hanoi, Vietnam</p>
+
+<p><i class="fa-brands fa-facebook"></i> facebook.com/999nguyeenan</p>
 
 </section>
 
@@ -161,14 +209,46 @@ developing strong analytical and communication skills.
 
 <ul>
 
-<li>Financial Analysis</li>
-<li>Excel</li>
-<li>PowerPoint</li>
-<li>Google Sheets</li>
-<li>Content Marketing</li>
-<li>Market Research</li>
+<li><i class="fa-solid fa-chart-line"></i> Financial Analysis</li>
+
+<li><i class="fa-solid fa-file-excel"></i> Microsoft Excel</li>
+
+<li><i class="fa-solid fa-file-powerpoint"></i> PowerPoint</li>
+
+<li><i class="fa-solid fa-table"></i> Google Sheets</li>
+
+<li><i class="fa-solid fa-bullhorn"></i> Content Marketing</li>
+
+<li><i class="fa-solid fa-magnifying-glass-chart"></i> Market Research</li>
 
 </ul>
+
+</section>
+
+
+<section>
+
+<h2>Work Experience</h2>
+
+<div class="job">
+
+<h3>CamXu Education Co., Ltd</h3>
+
+<p><strong>Marketing Collaborator | May 2025 – Present</strong></p>
+
+<ul>
+
+<li>Create engaging content for the company’s Facebook page</li>
+
+<li>Develop educational posts to increase reach and engagement</li>
+
+<li>Collaborate with marketing team to brainstorm campaign ideas</li>
+
+<li>Edit short-form videos and student testimonial content</li>
+
+</ul>
+
+</div>
 
 </section>
 
@@ -179,19 +259,44 @@ developing strong analytical and communication skills.
 
 <div class="projects">
 
-<div class="project-card">
-<h3>Marketing Content Project</h3>
-<p>Created Facebook content and educational posts for CamXu Education.</p>
+<div class="project">
+
+<h3>FDI Economic Research</h3>
+
+<p>
+
+Research project analyzing the role of FDI in Vietnam’s market economy
+during 2016-2022.
+
+</p>
+
 </div>
 
-<div class="project-card">
-<h3>Financial Research</h3>
-<p>Research on FDI impact on Vietnam economy (2016-2022).</p>
+
+<div class="project">
+
+<h3>Marketing Content Strategy</h3>
+
+<p>
+
+Developed content strategies and engagement posts for CamXu Education's
+social media channels.
+
+</p>
+
 </div>
 
-<div class="project-card">
-<h3>Portfolio Website</h3>
-<p>Personal portfolio website built using HTML and GitHub Pages.</p>
+
+<div class="project">
+
+<h3>Personal Portfolio Website</h3>
+
+<p>
+
+Designed and developed a personal portfolio website using HTML and GitHub Pages.
+
+</p>
+
 </div>
 
 </div>
@@ -199,16 +304,14 @@ developing strong analytical and communication skills.
 </section>
 
 
-<section class="contact">
+<section style="text-align:center">
 
-<h2>Contact</h2>
-
-<p>Email: anhalida@gmail.com</p>
-
-<p>Phone: 0907996561</p>
+<h2>Curriculum Vitae</h2>
 
 <a href="cv.pdf" target="_blank">
+
 <button>Download CV</button>
+
 </a>
 
 </section>
