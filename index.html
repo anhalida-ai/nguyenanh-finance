@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +9,8 @@
 
 <title>Nguyen Anh Portfolio</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 
@@ -23,13 +25,13 @@ color:#323b4c;
 
 header{
 background:#f2a88d;
-padding:60px 20px;
+padding:70px 20px;
 text-align:center;
 }
 
 header img{
-width:150px;
-height:150px;
+width:160px;
+height:160px;
 border-radius:50%;
 object-fit:cover;
 border:6px solid white;
@@ -38,10 +40,6 @@ border:6px solid white;
 header h1{
 margin:15px 0 5px;
 font-size:38px;
-}
-
-header p{
-margin:4px;
 }
 
 .student{
@@ -53,7 +51,7 @@ font-weight:bold;
 section{
 max-width:1000px;
 margin:auto;
-padding:50px 20px;
+padding:60px 20px;
 }
 
 h2{
@@ -66,12 +64,13 @@ padding-left:10px;
 .about{
 background:#ffeae3;
 border-radius:10px;
+padding:25px;
 }
 
 /* CONTACT */
 
 .contact i{
-margin-right:10px;
+margin-right:8px;
 }
 
 /* SKILLS */
@@ -86,7 +85,7 @@ padding:0;
 .skills li{
 list-style:none;
 background:#f2a88d;
-padding:10px 16px;
+padding:10px 18px;
 border-radius:25px;
 color:white;
 font-size:14px;
@@ -105,23 +104,48 @@ border-radius:10px;
 margin-bottom:20px;
 }
 
-/* PROJECTS */
+/* PROJECT */
 
 .projects{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
 }
 
 .project{
 background:#ffeae3;
-padding:20px;
+border-radius:10px;
+padding:15px;
+transition:0.3s;
+}
+
+.project img{
+width:100%;
+border-radius:8px;
+margin-bottom:10px;
+}
+
+.project:hover{
+transform:translateY(-6px);
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.gallery img{
+width:100%;
 border-radius:10px;
 transition:0.3s;
 }
 
-.project:hover{
-transform:translateY(-5px);
+.gallery img:hover{
+transform:scale(1.05);
 }
 
 /* BUTTON */
@@ -129,7 +153,7 @@ transform:translateY(-5px);
 button{
 background:#323b4c;
 color:white;
-padding:12px 22px;
+padding:12px 24px;
 border:none;
 border-radius:6px;
 cursor:pointer;
@@ -145,6 +169,7 @@ footer{
 text-align:center;
 padding:30px;
 background:#ffeae3;
+margin-top:40px;
 }
 
 </style>
@@ -177,18 +202,16 @@ background:#ffeae3;
 <p>
 
 Second-year Financial Analysis & Investment student at Foreign Trade University.
-Currently pursuing CFA Level 1 with strong interest in financial markets,
-corporate finance and investment research.
-
-Seeking opportunities to enhance analytical skills, gain practical experience,
-and develop a professional career in finance and investment.
+Interested in financial markets, corporate finance and investment analysis.
+Currently building experience in marketing and business environments while
+developing analytical and communication skills.
 
 </p>
 
 </section>
 
 
-<section>
+<section class="contact">
 
 <h2>Contact</h2>
 
@@ -210,15 +233,10 @@ and develop a professional career in finance and investment.
 <ul>
 
 <li><i class="fa-solid fa-chart-line"></i> Financial Analysis</li>
-
 <li><i class="fa-solid fa-file-excel"></i> Microsoft Excel</li>
-
 <li><i class="fa-solid fa-file-powerpoint"></i> PowerPoint</li>
-
 <li><i class="fa-solid fa-table"></i> Google Sheets</li>
-
 <li><i class="fa-solid fa-bullhorn"></i> Content Marketing</li>
-
 <li><i class="fa-solid fa-magnifying-glass-chart"></i> Market Research</li>
 
 </ul>
@@ -232,19 +250,16 @@ and develop a professional career in finance and investment.
 
 <div class="job">
 
-<h3>CamXu Education Co., Ltd</h3>
+<h3>CamXu Education</h3>
 
-<p><strong>Marketing Collaborator | May 2025 – Present</strong></p>
+<p><strong>Marketing Collaborator | May 2025 - Present</strong></p>
 
 <ul>
 
-<li>Create engaging content for the company’s Facebook page</li>
-
-<li>Develop educational posts to increase reach and engagement</li>
-
-<li>Collaborate with marketing team to brainstorm campaign ideas</li>
-
-<li>Edit short-form videos and student testimonial content</li>
+<li>Create content for Facebook page</li>
+<li>Develop educational marketing posts</li>
+<li>Support marketing campaigns</li>
+<li>Edit short-form video content</li>
 
 </ul>
 
@@ -261,43 +276,50 @@ and develop a professional career in finance and investment.
 
 <div class="project">
 
+<img src="avt2.png">
+
+<h3>Marketing Content Project</h3>
+
+<p>Created educational posts and marketing content for CamXu Education.</p>
+
+</div>
+
+<div class="project">
+
+<img src="avt3.jpg">
+
 <h3>FDI Economic Research</h3>
 
-<p>
-
-Research project analyzing the role of FDI in Vietnam’s market economy
-during 2016-2022.
-
-</p>
+<p>Research on the role of FDI in Vietnam’s economy (2016-2022).</p>
 
 </div>
-
 
 <div class="project">
 
-<h3>Marketing Content Strategy</h3>
+<img src="avt4.jpg">
 
-<p>
+<h3>Portfolio Website</h3>
 
-Developed content strategies and engagement posts for CamXu Education's
-social media channels.
-
-</p>
+<p>Personal website built using HTML and GitHub Pages.</p>
 
 </div>
 
-
-<div class="project">
-
-<h3>Personal Portfolio Website</h3>
-
-<p>
-
-Designed and developed a personal portfolio website using HTML and GitHub Pages.
-
-</p>
-
 </div>
+
+</section>
+
+
+<section>
+
+<h2>Portfolio Gallery</h2>
+
+<div class="gallery">
+
+<img src="avt1.jpg">
+<img src="avt2.png">
+<img src="avt3.jpg">
+<img src="avt4.jpg">
+<img src="avt5.jpg">
 
 </div>
 
